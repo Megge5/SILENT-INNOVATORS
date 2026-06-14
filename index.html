@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silent Innovators</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+    <div class="logo">SilentInnovators</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Innovators</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#cert">Facts</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button onclick="toggleTheme()" class="btn">🌙</button>
+      <div class="menu" onclick="toggleMenu()">☰</div>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div data-aos="fade-up">
+    <h1>Silent Innovators of Technology</h1>
+<p>Educating visitors about overlooked innovators whose contributions shaped today's technology.</p>
+    <a href="#about" class="cta">Explore Now</a>
+  </div>
+</section>
+
+
+      <!-- ABOUT / CARDS -->
+<section id="about" class="section">
+  <h2 data-aos="fade-up">Forgotten Legends</h2>
+  <p>Discover the hidden minds that built the digital world.</p>
+  
+  <div class="grid">
+
+    <div class="card3d"
+onclick="showInnovator('lamarr')">
+      <div class="card-inner">
+        <h3>Hedy Lamarr</h3>
+        <p>Frequency hopping → WiFi & Bluetooth foundation.</p>
+        <p class="click-hint">Click to learn more →</p>
+      </div>
+    </div>
+
+    <div class="card3d"
+onclick="showInnovator('boole')">
+      <div class="card-inner">
+        <h3>George Boole</h3>
+        <p>Boolean algebra → core of computing logic.</p>
+        <p class="click-hint">Click to learn more →</p>
+      </div>
+    </div>
+
+    <div class="card3d"
+onclick="showInnovator('perlman')">
+      <div class="card-inner">
+        <h3>Radia Perlman</h3>
+        <p>STP → made networks stable & scalable.</p>
+        <p class="click-hint">Click to learn more →</p>
+      </div>
+    </div>
+
+    <div class="card3d"
+onclick="showInnovator('tesla')">
+      <div class="card-inner">
+        <h3>Nikola Tesla</h3>
+        <p>AC systems & wireless energy vision.</p>
+        <p class="click-hint">Click to learn more →</p>
+      </div>
+    </div>
+
+    <div class="card3d"
+onclick="showInnovator('ada')">
+  <div class="card-inner">
+    <h3>Ada Lovelace</h3>
+    <p>Recognized as the world's first computer programmer, she envisioned machines capable of more than calculations.</p>
+    <p class="click-hint">Click to learn more →</p>
+  </div>
+</div>
+
+<div class="card3d"
+onclick="showInnovator('shannon')">
+  <div class="card-inner">
+    <h3>Claude Shannon</h3>
+    <p>Father of Information Theory, whose work made modern digital communication and data transmission possible.</p>
+    <p class="click-hint">Click to learn more →</p>
+  </div>
+</div>
+
+<div class="card3d"
+onclick="showInnovator('turing')">
+  <div class="card-inner">
+    <h3>Alan Turing</h3>
+    <p>Laid the theoretical foundations of computer science and played a key role in codebreaking during World War II.</p>
+    <p class="click-hint">Click to learn more →</p>
+  </div>
+</div>
+
+<div class="card3d"
+onclick="showInnovator('bose')">
+  <div class="card-inner">
+    <h3>Jagadish Chandra Bose</h3>
+    <p>Pioneered wireless communication experiments years before radio became widespread.</p>
+    <p class="click-hint">Click to learn more →</p>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline" class="section dark-section">
+  <h2 data-aos="fade-up">Innovation Timeline</h2>
+
+  <div class="timeline">
+
+    <div class="timeline-item" data-aos="fade-right">
+     <span>1843</span>
+     <p>Ada Lovelace publishes the first algorithm intended for a machine.</p>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-right">
+      <span>1847</span>
+      <p>George Boole introduces Boolean Algebra</p>
+    </div>
+
+    
+
+    <div class="timeline-item" data-aos="fade-left">
+      <span>1890s</span>
+      <p>Nikola Tesla revolutionizes AC electricity</p>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-left">
+     <span>1895</span>
+     <p>Jagadish Chandra Bose demonstrates wireless signal transmission.</p>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-right">
+     <span>1936</span>
+     <p>Alan Turing introduces the concept of a universal computing machine.</p>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-right">
+      <span>1940s</span>
+      <p>Hedy Lamarr develops frequency hopping</p>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-left">
+     <span>1948</span>
+     <p>Claude Shannon establishes Information Theory, the foundation of digital communication.</p>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-left">
+      <span>1990s</span>
+      <p>Radia Perlman designs STP for networking</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FACTS -->
+<section id="cert" class="section">
+
+  <div class="know" data-aos="zoom-in">
+    <section id="facts" class="section">
+  <h2 data-aos="fade-up">Did You Know?</h2>
+
+  <div class="grid">
+
+    <div class="card3d">
+      <div class="card-inner">
+        <h3>WiFi Origins</h3>
+        <p>Modern WiFi traces part of its roots to Hedy Lamarr's frequency-hopping concept.</p>
+      </div>
+    </div>
+
+    <div class="card3d">
+      <div class="card-inner">
+        <h3>Programming Before Computers</h3>
+        <p>Ada Lovelace wrote an algorithm decades before electronic computers existed.</p>
+      </div>
+    </div>
+
+    <div class="card3d">
+      <div class="card-inner">
+        <h3>Internet Stability</h3>
+        <p>Without Radia Perlman's Spanning Tree Protocol, large networks could suffer endless loops.</p>
+      </div>
+    </div>
+
+    <div class="card3d">
+      <div class="card-inner">
+        <h3>Bits & Bytes</h3>
+        <p>Claude Shannon showed that all information could be represented using binary digits.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Quick Knowledge Check</h2>
+
+  <p>Who is known as the world's first computer programmer?</p>
+
+  <button onclick="checkAnswer('wrong')">Hedy Lamarr</button>
+  <button onclick="checkAnswer('correct')">Ada Lovelace</button>
+  <button onclick="checkAnswer('wrong')">Nikola Tesla</button>
+
+  <p id="quiz-result"></p>
+</section>
+
+<div id="innovatorModal" class="modal">
+
+  <div class="modal-content">
+
+    <span class="close-btn" onclick="closeModal()">
+      &times;
+    </span>
+
+    <img id="modalImg" src="" alt="Innovator">
+
+    <h2 id="modalName"></h2>
+
+    <p id="modalRole"></p>
+
+    <p id="modalDesc"></p>
+
+    <p id="modalFact"></p>
+
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>Created by Meghna Pradeep</p>
+</footer>
+
+</body>
+</html>
